@@ -17,16 +17,16 @@ function checkJambResult(score) {
   //Question 2
   function checkVotingEligibility(age) {
     if (age >= 18) {
-      console.log("You are eligible to vote")
+      return "You are eligible to vote"
     } else {
-      console.log("Not eligible")
+      return "Not eligible"
     }
   }
   
   // Example 
-  checkVotingEligibility(50) 
+  console.log(checkVotingEligibility(50))
   // Outputs: You are eligible to vote
-  checkVotingEligibility(12) 
+ console.log(checkVotingEligibility(12))
   // Outputs: Not eligible
   
   
@@ -34,13 +34,13 @@ function checkJambResult(score) {
 
 function evaluateStudent(name, score) {
     if (score >= 90) {
-      console.log("Excellent")
+      return "Excellent"
     } else if (score >= 75) {
-      console.log("Good")
+      return "Good"
     } else if (score >= 50) {
-      console.log("Average")
+      return "Average"
     } else {
-      console.log("Fail")
+      return "Fail"
     }
   }
   
@@ -58,9 +58,9 @@ function evaluateStudent(name, score) {
   //Question 4
   function checkAccess(hasID, isAbove18) {
     if (hasID && isAbove18) {
-      console.log("Access granted")
+      return "Access granted"
     } else {
-      console.log("Access denied")
+      return "Access denied"
     }
   }
   
@@ -87,8 +87,8 @@ function evaluateStudent(name, score) {
   }
   
   // Example 
-  const studentScores = [75, 40, 90, 50, 66]
-  checkScores(studentScores)
+  checkScores([75, 40, 90, 50, 66])
+
   // Output:
   // Pass
   // Fail
@@ -100,9 +100,9 @@ function evaluateStudent(name, score) {
   //Question 6
   const passBothExams = (mathScore, englishScore) => {
     if(mathScore >= 50 && englishScore >= 50){
-      console.log("Yes")
+      return "Yes"
     } else {
-      console.log("No")
+      return "No"
     }
       }
   
@@ -116,29 +116,29 @@ function evaluateStudent(name, score) {
   
 
   //Question 7
-  function checkSignup(email, phoneNumber) {
+  function checkSignUp(email, phoneNumber) {
     if (email || phoneNumber) {
-      console.log("Signup allowed")
+      return "Signup allowed"
     } else {
-      console.log("Signup denied")
+      return "Signup denied"
     }
   }
   
   // Example 
-  console.log(checkSignup("svshittu@gmail.com", ""))
+  console.log(checkSignUp("svshittu@gmail.com", ""))
    // Outputs: Signup allowed
-  console.log(checkSignup("", "1234567890"))       
+  console.log(checkSignUp("", "08055366366"))       
   // Outputs: Signup allowed
-  console.log(checkSignup("", ""))             
+  console.log(checkSignUp("", ""))             
   // Outputs: Signup denied
 
   
   //Question 8
   function validateCredentials(username, password) {
     if (username === "" || password === "") {
-      console.log("Invalid input")
+      return "Invalid input"
     }else{
-    console.log("Valid input")
+    return "Valid input"
   }
      }
   // Example 
@@ -154,7 +154,7 @@ function evaluateStudent(name, score) {
   //Question 9
 
   function workersCheck(hoursWorked) {
-  hoursWorked >= 40 ?  console.log("Full-time") : console.log("Part-time")
+   return hoursWorked >= 40 ?  "Full-time" : "Part-time"
          }
   
   // Example 
@@ -167,9 +167,9 @@ function evaluateStudent(name, score) {
   //Question 10
   const largerNumber = (num1, num2) =>{
     if(num1 > num2 ){
-    console.log(num1)
+    return num1
     } else {
-      console.log(num2)
+      return num2
     }
   }
 
