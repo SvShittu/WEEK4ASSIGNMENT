@@ -76,7 +76,8 @@ function evaluateStudent(name, score) {
   
 
   // Question 5
-  function checkScores(scores) {
+   const scores= [75, 40, 90, 50, 66]
+
     for (let i = 0; i < scores.length; i++) {
       if (scores[i] > 50) {
         console.log("Pass")
@@ -84,11 +85,8 @@ function evaluateStudent(name, score) {
         console.log("Fail")
       }
     }
-  }
   
   // Example 
-  checkScores([75, 40, 90, 50, 66])
-
   // Output:
   // Pass
   // Fail
